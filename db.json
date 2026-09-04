@@ -1,0 +1,102 @@
+{
+  "user": {
+    "totalBalance": 95050.12,
+    "monthlyGrowth": 12450.00,
+    "transactionHistory": [
+      { "id": "TX-8921-A", "type": "Deposit", "method": "Sovereign Bank Wire", "amount": 5000, "status": "Completed", "timestamp": "May 24, 09:30" },
+      { "id": "TX-7234-W", "type": "Withdraw", "method": "Secured ACH Transfer", "amount": 1200, "status": "Completed", "timestamp": "May 22, 14:15" }
+    ]
+  },
+  "shipments": [
+    {
+      "id": "SH-4821-TG",
+      "partner": "Target Corp",
+      "partnerLogo": "TG",
+      "origin": "Los Angeles Port",
+      "destination": "Dallas Inland Hub",
+      "carrier": "Union Pacific Rail",
+      "status": "Action Required",
+      "eta": "May 28, 09:15",
+      "dateStr": "2026-05-28",
+      "confidence": 64,
+      "value": "$285,000",
+      "valueNumeric": 285000,
+      "carbonKg": 1840,
+      "temperature": 21.2,
+      "chargebackRisk": "High",
+      "routeEfficiency": 72
+    },
+    {
+      "id": "SH-9840-WM",
+      "partner": "Walmart Inc",
+      "partnerLogo": "WM",
+      "origin": "Memphis Region Center",
+      "destination": "Atlanta Fulfillment",
+      "carrier": "FedEx Freight Ground",
+      "status": "In Transit",
+      "eta": "May 26, 14:30",
+      "dateStr": "2026-05-26",
+      "confidence": 97,
+      "value": "$124,500",
+      "valueNumeric": 124500,
+      "carbonKg": 420,
+      "temperature": 18.5,
+      "chargebackRisk": "Low",
+      "routeEfficiency": 94
+    },
+    {
+      "id": "SH-7123-AZ",
+      "partner": "Amazon Web Retail",
+      "partnerLogo": "AZ",
+      "origin": "Seattle SODO Terminal",
+      "destination": "Chicago O'Hare Hub",
+      "carrier": "Prime Air Cargo",
+      "status": "Delayed",
+      "eta": "May 25, 22:45",
+      "dateStr": "2026-05-25",
+      "confidence": 81,
+      "value": "$98,000",
+      "valueNumeric": 98000,
+      "carbonKg": 1210,
+      "temperature": 4.2,
+      "chargebackRisk": "Medium",
+      "routeEfficiency": 82
+    },
+    {
+      "id": "SH-2291-HD",
+      "partner": "Home Depot Logistics",
+      "partnerLogo": "HD",
+      "origin": "Atlanta Rail Yard",
+      "destination": "Houston Distribution",
+      "carrier": "CSX Rail Link",
+      "status": "In Transit",
+      "eta": "May 27, 11:00",
+      "dateStr": "2026-05-27",
+      "confidence": 91,
+      "value": "$165,000",
+      "valueNumeric": 165000,
+      "carbonKg": 680,
+      "temperature": 24.0,
+      "chargebackRisk": "None",
+      "routeEfficiency": 88
+    },
+    {
+      "id": "SH-3101-WF",
+      "partner": "Whole Foods Inc",
+      "partnerLogo": "WF",
+      "origin": "Napa Cold Logistics",
+      "destination": "Seattle Prime Hub",
+      "carrier": "Lineage Cold Chain",
+      "status": "Delivered",
+      "eta": "May 24, 08:00",
+      "dateStr": "2026-05-24",
+      "confidence": 100,
+      "value": "$72,000",
+      "valueNumeric": 72000,
+      "carbonKg": 310,
+      "temperature": 3.4,
+      "chargebackRisk": "None",
+      "routeEfficiency": 98
+    }
+  ]
+}
