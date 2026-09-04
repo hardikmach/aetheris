@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+
+  --color-background: #000000;
+  --color-surface: #0a0a0a;
+  --color-surface-bright: #1c1c1c;
+  --color-on-surface: #ffffff;
+  --color-primary: #ff0000;
+  --color-secondary: #ff3b3b;
+  --color-outline: #333333;
+  --color-outline-variant: #1a1a1a;
+
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-3xl: 3rem;
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-shimmer: shimmer 2s linear infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-sans antialiased selection:bg-primary/30;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight uppercase font-bold;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/[0.03] backdrop-blur-xl border border-white/[0.08] shadow-2xl;
+  }
+
+  .glass-dark {
+    @apply bg-black/60 backdrop-blur-2xl border border-white/[0.03] shadow-inner;
+  }
+
+  .glass-red {
+    @apply bg-primary/20 backdrop-blur-xl border border-primary/30 shadow-[0_0_40px_rgba(255,0,0,0.1)];
+  }
+
+  .pill {
+    @apply rounded-full;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+  }
+
+  .bg-glow-red {
+    box-shadow: 0 0 50px rgba(255, 0, 0, 0.15);
+  }
+}
+
